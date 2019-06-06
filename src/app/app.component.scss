@@ -1,3 +1,30 @@
 .flex-item {
-    width: 450px;
+    width: 460px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+.box-border {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.inputs {
+    padding-top: 20px;
+    width: 980px;
+    border-color: gray;
+}
+
+.results {
+    width: 980px;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    img {
+        width: 500px;
+    }
 }

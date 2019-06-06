@@ -1,19 +1,15 @@
-<!-- <img src="https://www.koeppel-legal.ch/wp-content/uploads/2018/10/Logo_AHV_AllgemeineProdukte_d.jpg" /> -->
-
-<!-- <div fxLayout="column wrap" fxLayoutGap="20px grid" fxLayoutAlign="space-around center"> -->
+<header>
+  <img src="https://www.koeppel-legal.ch/wp-content/uploads/2018/10/Logo_AHV_AllgemeineProdukte_d.jpg" />
+</header>
 <div fxLayout="row wrap">
-  <ahv-inputs class="flex-item"></ahv-inputs>
+  <ahv-inputs class="flex-item inputs box-border"></ahv-inputs>
 </div>
 <div fxLayout="row wrap" fxLayoutGap="20px">
-  <!-- <div fxLayout="column"> -->
-  <!-- <div fxLayout="row wrap"> -->
-  <ahv-age class="flex-item"></ahv-age>
-  <ahv-payout class="flex-item"></ahv-payout>
-  <!-- </div> -->
-  <!-- <div fxLayout="row wrap"> -->
-  <ahv-mwst class="flex-item"></ahv-mwst>
-  <ahv-deduction class="flex-item"></ahv-deduction>
-  <!-- </div> -->
-  <!-- </div> -->
+  <ahv-age class="flex-item box-border"></ahv-age>
+  <ahv-payout class="flex-item box-border"></ahv-payout>
+  <ahv-mwst class="flex-item box-border"></ahv-mwst>
+  <ahv-deduction class="flex-item box-border"></ahv-deduction>
 </div>
-<ahv-results></ahv-results>
+<div fxLayout="row wrap">
+  <ahv-results class="flex-item results box-border"></ahv-results>
+</div>

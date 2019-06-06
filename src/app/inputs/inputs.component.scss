@@ -1,7 +1,10 @@
-// mat-form-field {
-//     margin-top: 10px 0;
-// }
+mat-form-field {
+    margin-top: 10px 0;
+}
 
-// mat-radio-group {
-//     margin: 10px 30px;
-// }
+mat-radio-group {
+    margin: 10px 30px;
+    mat-radio-button {
+        margin-right: 10px;
+    }
+}
