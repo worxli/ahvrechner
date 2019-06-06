@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 
-import {
-  MatInputModule,
-  MatSliderModule,
-  MatFormFieldModule,
-  MatCheckboxModule,
-  MatCardModule,
-  MatRadioModule
-} from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { PlatformModule } from '@angular/cdk/platform';
 import { ObserversModule } from '@angular/cdk/observers';
