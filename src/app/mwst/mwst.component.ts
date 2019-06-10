@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorService } from '../calculator.service';
 
 @Component({
   selector: 'ahv-mwst',
@@ -12,9 +13,14 @@ export class MwstComponent implements OnInit {
   step = 0.1;
   value = 7.7;
 
-  constructor() { }
+  constructor(private calculatorService: CalculatorService) { }
 
   ngOnInit() {
+    this.setValue();
+  }
+
+  setValue() {
+    this.calculatorService.setMwSt(this.value);
   }
 
 }

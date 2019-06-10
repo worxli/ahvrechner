@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorService } from '../calculator.service';
 
 @Component({
   selector: 'ahv-deduction',
@@ -12,9 +13,14 @@ export class DeductionComponent implements OnInit {
   step = 0.2;
   value = 8.4;
 
-  constructor() { }
+  constructor(private calculatorService: CalculatorService) { }
 
   ngOnInit() {
+    this.setValue()
+  }
+
+  setValue() {
+    this.calculatorService.setDeduction(this.value);
   }
 
 }

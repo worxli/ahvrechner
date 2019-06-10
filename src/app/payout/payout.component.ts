@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorService } from '../calculator.service';
 
 @Component({
   selector: 'ahv-payout',
@@ -12,9 +13,14 @@ export class PayoutComponent implements OnInit {
   step = 10;
   value = 2250;
 
-  constructor() { }
+  constructor(private calculatorService: CalculatorService) { }
 
   ngOnInit() {
+    this.setValue()
+  }
+
+  setValue() {
+    this.calculatorService.setPayout(this.value);
   }
 
 }

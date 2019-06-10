@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorService } from '../calculator.service';
 
 @Component({
   selector: 'ahv-age',
@@ -12,9 +13,14 @@ export class AgeComponent implements OnInit {
   step = 1;
   value = 65;
 
-  constructor() { }
+  constructor(private calculatorService: CalculatorService) { }
 
   ngOnInit() {
+    this.setValue()
+  }
+
+  setValue() {
+    this.calculatorService.setPensionAge(this.value);
   }
 
 }

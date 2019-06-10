@@ -1,10 +1,10 @@
 <mat-form-field>
-  <input matInput type="number" placeholder="Monatslohn" [value]="salary" />
+  <input matInput type="number" (change)="setSalary()" placeholder="Monatslohn" [(ngModel)]="salary" />
 </mat-form-field>
-<mat-radio-group [(ngModel)]="gender">
+<mat-radio-group [(ngModel)]="gender" (change)="setGender()">
   <mat-radio-button value="male">M</mat-radio-button>
   <mat-radio-button value="female">F</mat-radio-button>
 </mat-radio-group>
 <mat-form-field>
-  <input matInput type="number" placeholder="Alter" [value]="age" />
+  <input matInput type="number" placeholder="Alter" [(ngModel)]="age" (change)="setAge()" />
 </mat-form-field>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorService } from '../calculator.service';
 
 @Component({
   selector: 'ahv-inputs',
@@ -11,9 +12,24 @@ export class InputsComponent implements OnInit {
   salary = 5000;
   gender = 'male';
 
-  constructor() { }
+  constructor(private calculatorService: CalculatorService) { }
 
   ngOnInit() {
+    this.setSalary();
+    this.setGender();
+    this.setAge();
+  }
+
+  setSalary() {
+    this.calculatorService.setSalary(this.salary);
+  }
+
+  setGender() {
+    this.calculatorService.setGender(this.gender);
+  }
+
+  setAge() {
+    this.calculatorService.setAge(this.age);
   }
 
 }

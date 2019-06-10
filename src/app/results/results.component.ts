@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorService } from '../calculator.service';
 
 @Component({
   selector: 'ahv-results',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultsComponent implements OnInit {
 
-  constructor() { }
+  salary: number;
+
+  constructor(private calculatorService: CalculatorService) { }
 
   ngOnInit() {
+    this.calculatorService.getResultSalary().subscribe(
+      (salary: number) => this.salary = salary
+    );
   }
 
 }
