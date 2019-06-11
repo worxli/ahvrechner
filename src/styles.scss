@@ -1,13 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+// @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/theming';
+@include mat-core();
+
+$glp-ahvrechner-primary: mat-palette($mat-green);
+$glp-ahvrechner-accent:  mat-palette($mat-blue, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$glp-ahvrechner-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$glp-ahvrechner-theme: mat-light-theme($glp-ahvrechner-primary, $glp-ahvrechner-accent, $glp-ahvrechner-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($glp-ahvrechner-theme);
 
 body {
-    max-width: 1050px;
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-
-.mat-slider-horizontal {
-    width: 400px;
+    font-family: 'Oswald', sans-serif;
 }

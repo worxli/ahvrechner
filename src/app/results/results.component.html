@@ -1,6 +1,6 @@
 <div>
   <h2>Resulate</h2>
   <p>Dein Lohn: <b>{{ salary }}.-</b></p>
-  <img
-    src="https://www.efd.admin.ch/efd/en/home/dokumentation/legislation/abstimmungen/staf/staf-bsv/_jcr_content/par/textimage/image.imagespooler.jpg/1539178080471/588.1000/Grafik%20BSV-d.png">
+  <canvas baseChart width="600" height="400" [datasets]="lineChartData" [labels]="lineChartLabels"
+    [legend]="false" chartType="line"></canvas>
 </div>

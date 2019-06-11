@@ -1,7 +1,7 @@
 <div fxLayout="row wrap">
     <div>
         <p class="slider-title">AHV Auszahlung</p>
-        <mat-slider vertical="true" [max]="max" [min]="min" [step]="step" [thumbLabel]="true" [(ngModel)]="value" (change)="setValue()">
+        <mat-slider [max]="max" [min]="min" [step]="step" [thumbLabel]="true" [(ngModel)]="value" (change)="setValue()">
         </mat-slider>
     </div>
     <div fxFlexFill fxLayout="">

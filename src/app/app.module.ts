@@ -15,6 +15,7 @@ import { InputsComponent } from './inputs/inputs.component';
 import { DeductionComponent } from './deduction/deduction.component';
 import { PayoutComponent } from './payout/payout.component';
 import { ResultsComponent } from './results/results.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ResultsComponent } from './results/results.component';
     AppRoutingModule,
     FormsModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

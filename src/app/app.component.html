@@ -1,15 +1,23 @@
-<header>
+<div class="diagonal">
+  <div class="blue"></div>
+  <div class="title">Do it yourself AHV-Reform</div>
+</div>
+
+<div fxLayout="row wrap" fxLayoutAlign="space-evenly" class="content">
+  <div fxLayout="column">
+    <ahv-inputs></ahv-inputs>
+    <div fxLayout="row wrap">
+      <ahv-age class="item"></ahv-age>
+      <ahv-payout class="item"></ahv-payout>
+    </div>
+    <div fxLayout="row wrap">
+      <ahv-mwst class="item"></ahv-mwst>
+      <ahv-deduction class="item"></ahv-deduction>
+    </div>
+  </div>
+  <ahv-results></ahv-results>
+</div>
+<div class="logo">
+  <div></div>
   <img src="https://jungegrunliberale.ch/wp-content/uploads/2018/07/jglp-schweiz_logo_web-2.jpg" />
-</header>
-<div fxLayout="row wrap">
-  <ahv-inputs class="flex-item inputs box-border"></ahv-inputs>
-</div>
-<div fxLayout="row wrap" fxLayoutGap="20px">
-  <ahv-age class="flex-item box-border"></ahv-age>
-  <ahv-payout class="flex-item box-border"></ahv-payout>
-  <ahv-mwst class="flex-item box-border"></ahv-mwst>
-  <ahv-deduction class="flex-item box-border"></ahv-deduction>
-</div>
-<div fxLayout="row wrap">
-  <ahv-results class="flex-item results box-border"></ahv-results>
 </div>
